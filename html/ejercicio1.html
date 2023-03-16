@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo formulario # 1</title>
+</head>
+<body>
+
+    <h2 style="color: orange;">Land Of Boxes Order Form</h2>
+
+    <form action="">
+
+    Name:
+    <input type="text" oninput="this.value = this.value.replace(/[0-9]/g,'')" autofocus><br><br>
+
+    Email:
+    <input type="email" pattern="[a-zA-Z0-9()&gt;&lt;@,;:"[]ç%&]{0,30}  maxlength="30"><br><br>
+
+    <label style="vertical-align: 40px;">Address:</label>
+    <textarea style="overflow-y:scroll;" name="" id="" cols="25" rows="5">
+162 Main Road
+Rondebosch
+Cape Town
+    </textarea><br><br>
+
+    Postcode:
+    <input type="text" pattern="[0-9]*" minlength="6" maxlength="8"><br><br>
+
+    <table border="1">
+
+        <tr>
+            <td><strong>Product</strong></td>
+            <td><strong>Part Number</strong></td>
+            <td><strong>Quantity</strong></td>
+            <td><strong>Urut Price</strong></td>
+            <td><strong>Subtotal</strong></td>
+        </tr>
+
+        <tr>
+            <td>EconoBox</td>
+            <td>LB100</td>
+            <td><input type="text" pattern="[a-zA-Z0-9()&gt;&lt;@,;:"[]ç%&]{0,30}  maxlength="3"></td>
+            <td>R5</td>
+            <td><input type="text" pattern="^R\d{0,100}"></td>
+        </tr>
+
+        <tr>
+            <td>Standar Box</td>
+            <td>LB200</td>
+            <td><input type="text" pattern="[a-zA-Z0-9()&gt;&lt;@,;:"[]ç%&]{0,30}  maxlength="3"></td>
+            <td>R10</td>
+            <td><input type="text" pattern="^R\d{0,100}" minlength="1"></td>
+        </tr>
+
+        <tr>
+            <td>Premiun Box/TD></td>
+            <td>LB300</td>
+            <td><input type="text" pattern="[a-zA-Z0-9()&gt;&lt;@,;:"[]ç%&]{0,30}  maxlength="3"></td>
+            <td>R15</td>
+            <td><input type="text" pattern="^R\d{0,100}"></td>
+        </tr>
+
+        <tr>
+            <td>Deluxe Box/TD></td>
+            <td>LB400</td>
+            <td><input type="text" pattern="[a-zA-Z0-9()&gt;&lt;@,;:"[]ç%&]{0,30}  maxlength="3"></td>
+            <td>R20</td>
+            <td><input type="text" pattern="^R\d{0,100}"></td>
+        </tr>
+
+        <tr>
+            <td>Super Deluxe Box/TD></td>
+            <td>LB500</td>
+            <td><input type="text" pattern="[a-zA-Z0-9()&gt;&lt;@,;:"[]ç%&]{0,30}  maxlength="3"></td>
+            <td>R30</td>
+            <td><input type="text" pattern="^R\d{0,100}"></td>
+        </tr>
+
+        <tr>
+            <td colspan="4">Total:</td>
+            <td>R100</td>
+        </tr>
+
+    </table>
+
+    <P><strong>Credit Card Details</strong></P>
+
+    Card Type: <br><br>
+    <input type="radio" name="card" id=""> Mastercard &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    Card Number: <input type="number"><br>
+    <input type="radio" name="card" id=""> Visa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    Expiry date:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" pattern="(0[1-9]|1[0-2])\/?([0-9]{2})$"><br>
+
+    <input type="radio" name="card" id=""> American Express <br>
+    <input type="radio" name="card" id=""> Diners Club <br><br><br>
+
+    <label style="vertical-align: 40px;"><strong>Delivery Address:</strong></label>
+    
+    <textarea style="overflow-y:scroll;" name="" id="" cols="20" rows="5">162 Main Road
+Rondebosch 
+Cape Town</textarea> <br><br>
+
+    <button>Send order</button>&nbsp;&nbsp;<button>Clear form</button>
+
+</form>
+
+
+</body>
+</html>

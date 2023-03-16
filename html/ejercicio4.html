@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario # 4</title>
+</head>
+<body>
+
+    <form action="">
+
+        <table border="1">
+
+            <tr>
+                <th colspan="2">Basketball Registration Form</th>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+
+                    Player Name <br>
+                    <input type="text" name="" id="" placeholder="First">
+                    <input type="text" name="" id="" placeholder="Last">
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+
+                    Age <br>
+                    <input type="number" name="" id="" min="30">
+
+                </td>
+                <td>
+
+                    Email <br>
+                    <input type="email" name="" id="" pattern="[a-zA-Z0-9._%+-]+@([a-zA-Z0-9-]+\.)+com">
+
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+
+                    Address <br>
+                    <input type="text" name="" id="" placeholder="Street Address" style="width: 352px;"><br>
+                    <input type="text" name="" id="" placeholder="Street Address Line 2" style="width: 352px;">
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+
+                    <input type="text" name="" id="" placeholder="City">
+
+                </td>
+                <td>
+
+                    <input type="text" name="" id="" placeholder="Region">
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+
+                    <input type="number" name="" id="" placeholder="Postal / Zip Code">
+
+                </td>
+                <td>
+
+                    <input type="text" placeholder="Country" list="Ciudades">
+                    <datalist id="Ciudades">
+                    <option value="Bogota"></option>
+                    <option value="Medellin"></option>
+                    <option value="Barranquilla"></option>
+                    <option value="Sincelejo"></option>
+                    </datalist>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+
+                    Home Phone <br>
+                    <input type="tel" name="" id="" pattern="\d{3}\s\d{3}\s\d{4}" placeholder="### ### ####">
+
+                </td>
+                <td>
+
+                    Cell Phone <br>
+                    <input type="tel" name="" id="" pattern="\d{3}\s\d{3}\s\d{4}" placeholder="### ### ####">
+
+                </td>
+            </tr>
+
+        </table>
+    <input type="submit" value="enviar">
+
+    </form>
+    
+</body>
+</html>
